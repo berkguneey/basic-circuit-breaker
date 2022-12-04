@@ -1,5 +1,11 @@
 spring:  
   application:  
     name: greeting
+  cache:
+    redis:
+      time-to-live: 5000 # Delete after 5min.
+  redis:
+    host: localhost
+    port: 6379
 server:
   port : 8080
